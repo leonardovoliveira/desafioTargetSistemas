@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+:root {
+    --backgroud: linear-gradient(to right, #434343 0%, black 100%);
+    --corFonte: whitesmoke;
+    --fontePadrao: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: var(--backgroud);
+    color: var(--corFonte);
+    font-family: var(--fontePadrao);
+}
+
+input{
+    margin: 1rem;
+}
+
+section{
+    margin: 3rem;
+    border: 0.1rem solid var(--corFonte);
+    border-radius: 0.5rem;
+    width: 55rem;
+    padding: 1rem;
+}
+
+.js{
+    text-align: center;
+}
+
+button{
+    border-radius: 1rem;
+    padding: 0.3rem;
+    width: fit-content;
+    background-color: rgb(216, 53, 53);
+    color: var(--corFonte);
+    font-weight: bold;
+}
+
+strong{
+    color: red;
+}
+
+i{
+    font-size: 0.8rem;
+}
+
+.res{
+    border: 0.1rem solid var(--corFonte);
+    border-radius: 0.2rem;
+    padding: 0 0.1rem;
+}
+
+.textoResultado3{
+    border: 0.1rem solid var(--corFonte);
+    padding: 0.5rem;
+    background-color: #596164;
+    border-radius: 0.5rem;
+    width: fit-content;
+}

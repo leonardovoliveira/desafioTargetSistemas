@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Desafios Target</title>
+</head>
+<body>
+    <!--1. FIBONACCI-->
+    <section class="js">
+        <h1>1.) Seguencia de Fibonacci Tester</h1>
+        <input type="number" id="numero">
+        <button onclick="verificarNumero()">Verificar</button>
+        <p id="resultado"></p>
+    </section>
+    
+    <!--2. MAIUSCULA/MINUSCULA-->
+    <section  class="js">
+        <h1>2.) Letra "A/a" Tester</h1>
+        <input type="text" id="texto">
+        <button onclick="verificarLetraA()">Verificar</button>
+        <p id="resultadoTexto"></p>
+    </section>
+    
+    <!--3. RESULTADO DA SOMA (INDICE, K E SOMA)-->
+    <section>
+        <h1>3.) Ao final do processamento, qual será o valor da variável SOMA?</h1>
+        <texto>Observe o trecho de código abaixo:</texto>
+        <pre><code>
+            int INDICE = 12, SOMA = 0, K = 1;
+            enquanto (K < INDICE) faça{
+                K = K + 1;
+                SOMA = SOMA + K;
+            }
+            imprimir(SOMA);
+        </code></pre>
+        <p class="textoResultado3">No final da execução o resultado da variavel SOMA será igual a 77.</p>
+    </section>
+
+     <!--4. LÓGICA DAS SEGUENCIAS-->
+     <section>
+        <h1>4.) Descubra a lógica e complete o próximo elemento: </h1>
+        <texto>Observe o trecho de código abaixo:</texto>
+        <pre>
+a) 1, 3, 5, 7, <strong class="res">9</strong><i> "seguencia de números impares (X + 2)"</i>
+b) 2, 4, 8, 16, 32, 64, <strong class="res">128</strong><i> "seguencia de potência de 2 (2<sup>x</sup>)"</i>
+c) 0, 1, 4, 9, 16, 25, 36, <strong class="res">49</strong><i> "seguencia de números naturais inteiros ao quadrado (n<sup>2</sup>)"</i>
+d) 4, 16, 36, 64, <strong class="res">100</strong><i> "seguencia de números naturais inteiros pares ao quadrado (n<sup>2</sup>)"</i>
+e) 1, 1, 2, 3, 5, 8, <strong class="res">13</strong><i> "seguencia de Fibonacci (n+(n-1))"</i>
+f) 2, 10, 12, 16, 17, 18, 19, <strong class="res">200</strong><i> "seguencia dos números iniciados com a letra D no idioma (pt-br)."</i>
+        </pre>
+    </section>
+
+     <!--5. ENIGMA DA LAMPADA-->
+     <section>
+        <h1>5.) Enigma das 3 Lampadas</h1>
+        <texto>Você está em uma sala com três interruptores, cada um conectado a uma lâmpada em salas diferentes. Você não pode ver as lâmpadas da sala em que está, mas pode ligar e desligar os interruptores quantas vezes quiser. Seu objetivo é descobrir qual interruptor controla qual lâmpada. Como você faria para descobrir, usando apenas duas idas até uma das salas das lâmpadas, qual interruptor controla cada lâmpada?</texto>
+        <pre>Uma possivel solução seria: <br>
+1. Ligamos o interruptor A e B, e deixamos o interruptor C desligado;
+2. Desligamos o interruptor A, deixamos o B ligado, e o C permanece desligado;
+3. Ao chegar na sala onde esta as lampadas, fazemos a veriricação:
+    3.1 A lampada que estiver ligada, é controlada pelo interruptor B;
+    3.2 A lampada que estiver desligada e quente, é controlada pelo interruptor A;
+    3.3 A lampada que estiver desligada e fria, é controlada pelo interruptor C.
+        </pre>
+    </section>
+
+    <script src="/script.js"></script>
+</body>
+</html>
